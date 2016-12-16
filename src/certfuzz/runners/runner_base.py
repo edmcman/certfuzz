@@ -24,6 +24,7 @@ class Runner(object):
 
         self.hideoutput = options.get('hideoutput', False)
         self.runtimeout = options.get('runtimeout', 5)
+        self.maxmemory = options.get('maxmemory', 1024)
         self.saw_crash = False
         self.fuzzed_file = fuzzed_file
 

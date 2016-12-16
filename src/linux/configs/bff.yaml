@@ -62,11 +62,16 @@ directories:
 #
 # runtimeout:
 # maximum program execution time (seconds) that BFF will the target to execute
+# maxmemory:
+# maximum memory (MB) that the target may allocate, or -1 for no
+# limit.  If you use AddressSanitizer or another tool that utilizes a
+# shadow memory space, you may want to set this to -1.
 #
 ##############################################################################
 runner:
+    maxmemory: 1024
+    # maxmemory: -1
     runtimeout: 5
-    
 
 ##############################################################################
 # DEBUGGER OPTIONS

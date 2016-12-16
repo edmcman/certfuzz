@@ -81,6 +81,7 @@ class ZzufRunner(Runner):
                      '--ratio=0.0',
                      '--seed=0',
                      '--max-crashes=1',
+                     '--max-memory=%s' % self.maxmemory,
                      '--max-usertime=%s' % self.runtimeout,
                      '--opmode=%s' % _opmode,
                      '--include=%s' % self.fuzzed_file,
